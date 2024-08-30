@@ -4,6 +4,7 @@
 #include <string>
 #include <map>
 #include <vector>
+#include <chrono>     // Inclui a biblioteca para medição de tempo.
 
 using namespace std;
 
@@ -59,6 +60,7 @@ int melhorMochila (std::vector<Objeto>& itens, int W, int indice){
 
 int main() {
     
+    auto start_global = std::chrono::high_resolution_clock::now(); 
 
     vector<Objeto> itens;
     int W;
@@ -66,9 +68,20 @@ int main() {
     //lê arquivo e preenche vetor com cada valor e peso dos objetos no arquivo
     lerArquivo("in4.txt", itens, W);
 
+    //auto start = std::chrono::high_resolution_clock::now(); 
+
     int valor_maximo = melhorMochila(itens, W, 0);
 
+    //auto end = std::chrono::high_resolution_clock::now(); 
+
+    auto end_global = std::chrono::high_resolution_clock::now(); 
+
+    std::chrono::duration<double> duration = end_global - start_global;
+    double exec_time = duration.count();
+
     cout << "Valor máximo que pode ser carregado na mochila: " << valor_maximo << endl;
+
+    cout << "O tempo de execução da global foi: " << exec_time << " segundos" << endl;
 
     // Retorna 0, indicando que o programa terminou com sucesso.
     return 0;

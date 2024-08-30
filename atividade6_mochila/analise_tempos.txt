@@ -1,0 +1,14 @@
+1. Tempos da função recursiva "melhorMochila"
+    - in1: 2.3e-06 segundos
+    - in2: 7e-07 segundos
+    - in3: 2.7e-06 segundos
+    - in4: 1e-06 segundos
+
+2. Tempos de execução
+    - in1: 0.0001484 segundos
+    - in2: 0.0001678 segundos
+    - in3: 0.00018 segundos
+    - in4: 0.0001587 segundos
+
+ANÁLISE
+
