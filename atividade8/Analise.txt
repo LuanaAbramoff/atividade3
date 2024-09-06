@@ -1,0 +1,5 @@
+Primeiramente, esses foram o melhor resultado de cada entrada levando em conta as 10 execuções de cada um dos algoritmos:
+    - Entrada 1: 534 dinheiros; 377 kg; 0.0002551 segundos -> Algoritmo de Substituição de Objetos
+    - Entrada 2: 904 dinheiros; 233 kg; 0.0002871 segundos -> Algoritmo de Substituição de Objetos
+    - Entrada 3: 3320 dinheiros; 405 kg; 0.0.15325 segundos -> Hill Climbing 
+

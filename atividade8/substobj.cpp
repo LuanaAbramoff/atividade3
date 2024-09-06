@@ -80,6 +80,7 @@ pair<int, int> buscaLocal (std::vector<Objeto>& itens, std::vector<Objeto>& moch
             mochila.push_back(itens[i]);
             valor_total += itens[i].valor;
             peso_total += itens[i].peso;
+            itens.pop_back();
         }
     }
 
@@ -91,6 +92,39 @@ pair<int, int> buscaLocal (std::vector<Objeto>& itens, std::vector<Objeto>& moch
 
 }
 
+pair<int, int> substituiObjeto(std::vector<Objeto>& itens, std::vector<Objeto>& mochila, int& W, int& peso_mochila_cheia, int& valor_mochila_cheia) {
+    bool houve_troca;
+
+    do {
+        houve_troca = false;
+
+        for (int i = 0; i < mochila.size(); i++) {
+            for (int j = 0; j < itens.size(); j++) {
+                int novo_peso_mochila = peso_mochila_cheia - mochila[i].peso + itens[j].peso;
+                int novo_valor_mochila = valor_mochila_cheia - mochila[i].valor + itens[j].valor;
+
+                if (novo_peso_mochila <= W && novo_valor_mochila > valor_mochila_cheia) {
+                    peso_mochila_cheia = novo_peso_mochila;
+                    valor_mochila_cheia = novo_valor_mochila;
+
+                    mochila[i] = itens[j];
+                    itens.erase(itens.begin() + j);
+
+                    pair<int, int> resultado_busca = buscaLocal(itens, mochila, W, peso_mochila_cheia, valor_mochila_cheia);
+                    peso_mochila_cheia = resultado_busca.first;
+                    valor_mochila_cheia = resultado_busca.second;
+
+                    houve_troca = true;
+                    break;  // Volta para o início do passo 2
+                }
+            }
+            if (houve_troca) break; 
+        }
+    } while (houve_troca);
+
+    return make_pair(peso_mochila_cheia, valor_mochila_cheia);
+}   
+
 
 int main() {
     
@@ -101,7 +135,7 @@ int main() {
     int W;
 
     //lê arquivo e preenche vetor com cada valor e peso dos objetos no arquivo
-    lerArquivo("Entrada_1.txt", itens, W);
+    lerArquivo("Entrada_2.txt", itens, W);
 
     //auto start = std::chrono::high_resolution_clock::now(); 
 
@@ -109,18 +143,25 @@ int main() {
     int peso_maximo  = resultado.first;
     int valor_maximo = resultado.second; 
 
-    pair<int, int> resultado_final = buscaLocal(itens, mochila, W, peso_maximo, valor_maximo);
+    pair<int, int> resultado_busca = buscaLocal(itens, mochila, W, peso_maximo, valor_maximo);
+    int peso_cheio = resultado_busca.first;
+    int valor_cheio = resultado_busca.second;
+    //auto end = std::chrono::high_resolution_clock::now();
+
+    int peso_antes_substituicao = peso_cheio;
+    int valor_antes_substituicao = valor_cheio;
+
+    pair<int, int> resultado_final = substituiObjeto(itens, mochila, W, peso_cheio, valor_cheio);
     int peso_final = resultado_final.first;
-    int valor_final = resultado_final.second;
-    //auto end = std::chrono::high_resolution_clock::now(); 
+    int valor_final = resultado_final.second; 
 
     auto end_global = std::chrono::high_resolution_clock::now(); 
 
     std::chrono::duration<double> duration = end_global - start_global;
     double exec_time = duration.count();
 
-    cout << "Peso ocupado: "  << peso_maximo << " Kg" << endl;
-    cout << "Valor alcançado: " << valor_maximo << " dinheiros" << endl;
+    cout << "Peso ocupado: "  << peso_antes_substituicao << " Kg" << endl;
+    cout << "Valor alcançado: " << valor_antes_substituicao << " dinheiros" << endl;
 
     cout << "Peso ocupado depois da busca local: "  << peso_final << " Kg" << endl;
     cout << "Valor alcançado depois da busca local: " << valor_final << " dinheiros" << endl;
