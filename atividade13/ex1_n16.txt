@@ -1,0 +1,10 @@
+N = 16 
+O tempo gasto com o scheduler static foi 2.11969e-06                
+
+O tempo gasto com o scheduler dinamico foi 4.12297e-06
+
+O tempo gasto com o scheduler guiado foi 3.62005e-06
+
+O tempo gasto com o scheduler auto foi 2.06474e-06
+
+
