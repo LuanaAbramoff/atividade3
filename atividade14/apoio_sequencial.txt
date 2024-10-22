@@ -1,0 +1,29 @@
+Aproxima├º├úo de pi: 3.1392
+O tempo de execu├º├úo foi: 0.0073596 segundos
+
+Aproxima├º├úo de pi: 3.13928
+O tempo de execu├º├úo foi: 0.0037559 segundos
+
+Aproxima├º├úo de pi: 3.14212
+O tempo de execu├º├úo foi: 0.0046208 segundos
+
+Aproxima├º├úo de pi: 3.14176
+O tempo de execu├º├úo foi: 0.0040587 segundo
+
+Aproxima├º├úo de pi: 3.14284
+O tempo de execu├º├úo foi: 0.0045618 segundos
+
+Aproxima├º├úo de pi: 3.1474
+O tempo de execu├º├úo foi: 0.0044368 segundos
+
+Aproxima├º├úo de pi: 3.14604
+O tempo de execu├º├úo foi: 0.0041048 segundos
+
+Aproxima├º├úo de pi: 3.13708
+O tempo de execu├º├úo foi: 0.0045808 segundos
+
+Aproxima├º├úo de pi: 3.15616
+O tempo de execu├º├úo foi: 0.0042698 segundos
+
+Aproxima├º├úo de pi: 3.141
+O tempo de execu├º├úo foi: 0.0045432 segundos

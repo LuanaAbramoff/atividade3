@@ -1,0 +1,29 @@
+Aproximação de pi: 3.14832
+O tempo de execução foi: 0.00493254 segundos
+
+Aproximação de pi: 3.14516
+O tempo de execução foi: 0.00492488 segundos
+
+Aproximação de pi: 3.13948
+O tempo de execução foi: 0.00490696 segundos
+
+Aproximação de pi: 3.13956
+O tempo de execução foi: 0.00496585 segundos
+
+Aproximação de pi: 3.14376
+O tempo de execução foi: 0.00492858 segundos
+
+Aproximação de pi: 3.14152
+O tempo de execução foi: 0.00498173 segundos
+
+Aproximação de pi: 3.1384
+O tempo de execução foi: 0.00495388 segundos
+
+Aproximação de pi: 3.13984
+O tempo de execução foi: 0.00492654 segundos
+
+Aproximação de pi: 3.13168
+O tempo de execução foi: 0.00496085 segundos
+
+Aproximação de pi: 3.13196
+O tempo de execução foi: 0.00494566 segundos
