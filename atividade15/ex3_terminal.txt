@@ -1,0 +1,6 @@
+Processo0enviou mensagem 18para o processo 1
+Processo 1 recebeu mensagem 18 do processo 0
+Processo 1 enviou mensagem 18 para o processo 2
+Processo 2 recebeu mensagem 18 do processo 1
+Processo 2 enviou mensagem 18 para o processo 3
+Processo 3 recebeu mensagem 18 do processo 2
