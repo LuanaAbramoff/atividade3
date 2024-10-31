@@ -1,0 +1,5 @@
+Processo 1 - Resultado local após 300 iterações: 45150
+Processo raiz define o número de iterações: 300
+Processo 0 - Resultado local após 300 iterações: 44850
+Processo 3 - Resultado local após 300 iterações: 45750
+Processo 2 - Resultado local após 300 iterações: 45450

@@ -1,0 +1,10 @@
+A media local é 49.936 do processo 0
+A variancia local é 864.42 do processo 0
+Média global: 49.215
+Desvio padrão global: 28.6601
+A media local é 49.772 do processo 1
+A variancia local é 802.512 do processo 1
+A media local é 48.144 do processo 2
+A variancia local é 790.387 do processo 2
+A media local é 49.008 do processo 3
+A variancia local é 826.272 do processo 3

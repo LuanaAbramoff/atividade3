@@ -1,0 +1,6 @@
+Array inicializado no processo raiz: 65 82 54 44 29 62 0 40 26 45 57 97 86 6 75 54 38 53 54 69 53 89 30 74 39 60 16 64 78 29 89 43 63 43 39 92 5 91 85 84 37 94 81 75 0 8 29 91 61 36 12 66 25 94 40 16 6 8 80 84 89 69 27 53 65 67 97 22 58 34 58 47 29 39 75 81 99 4 24 61 92 36 79 17 83 20 34 89 80 66 26 22 36 5 75 53 72 24 27 83 
+Processo 0 - Média local: 52.84
+Média global calculada no processo raiz: 52.62
+Processo 3 - Média local: 51.52
+Processo 2 - Média local: 50.4
+Processo 1 - Média local: 55.72
