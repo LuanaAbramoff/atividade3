@@ -1,0 +1,3 @@
+A média do vetor é: 49.4924
+O tamanho do vetor é 100000
+

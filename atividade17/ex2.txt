@@ -1,0 +1,20 @@
+---------------- USANDO PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 9.2635e-06
+Tamanho da matriz: 10
+Número de processos: 4
+
+---------------- USANDO PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 1.22183e-05
+Tamanho da matriz: 10
+Número de processos: 3
+
+---------------- USANDO PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 1.6677e-05
+Tamanho da matriz: 10
+Número de processos: 2
+
+---------------- USANDO PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 3.1829e-05
+Tamanho da matriz: 10
+Número de processos: 1
+* numeros negativos

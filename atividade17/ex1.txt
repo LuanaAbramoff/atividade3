@@ -1,0 +1,23 @@
+---------------- USANDO PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 1.39892e-05
+Tamanho da matriz: 10
+
+---------------- USANDO PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 1.46905e-05
+Tamanho da matriz: 100
+
+---------------- USANDO PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 0.000207702
+Tamanho da matriz: 1000
+
+---------------- SEM PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 2.97552e-05
+Tamanho da matriz: 10
+
+---------------- SEM PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 1.04038e-05
+Tamanho da matriz: 100
+
+---------------- SEM PARALELIZAÇÃO COM OPENMP ----------------
+Tempo gasto: 0.000204609
+Tamanho da matriz: 1000

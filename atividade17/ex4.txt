@@ -1,0 +1,1 @@
+O valor 5 foi encontrado nas posições globais: 3 5 29 48 60 65 61 71 73 
